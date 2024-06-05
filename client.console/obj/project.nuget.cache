@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "yPhbjwYVo9hz/Ko1t2R25gbiE8nKgSm7MGsvXRD1dJhvn7QsZLBkelveZzwIo6NPR+W8VurjJbEI/1owzLONYA==",
+  "success": true,
+  "projectFilePath": "/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/client.console.csproj",
+  "expectedPackageFiles": [
+    "/Users/sevimm/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/json.more.net/2.0.1.2/json.more.net.2.0.1.2.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/jsonpointer.net/5.0.0/jsonpointer.net.5.0.0.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/jsonschema.net/7.0.3/jsonschema.net.7.0.3.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/sevimm/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

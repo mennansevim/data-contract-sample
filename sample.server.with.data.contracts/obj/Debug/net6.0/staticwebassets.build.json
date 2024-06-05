@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6spZoDkKlEjzzj7dktS3Hq2GQbvTGk/nh3y3q0GPa8s=",
+  "Source": "sample.server.with.data.contracts",
+  "BasePath": "_content/sample.server.with.data.contracts",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
