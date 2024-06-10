@@ -38,9 +38,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "JsonSchema.Net": {
+            "NJsonSchema": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[11.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[15.1.6, )"
             }
           },
           "imports": [

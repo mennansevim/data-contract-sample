@@ -13,11 +13,6 @@
 /Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/obj/Debug/net6.0/client.console.pdb
 /Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/obj/Debug/net6.0/client.console.genruntimeconfig.cache
 /Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/obj/Debug/net6.0/ref/client.console.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/Humanizer.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/Json.More.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/JsonPointer.Net.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/JsonSchema.Net.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/System.Text.Encodings.Web.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/System.Text.Json.dll
-/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/obj/Debug/net6.0/client.console.csproj.CopyComplete
+/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/sevimm/RiderProjects/sample.server.with.data.contracts/client.console/bin/Debug/net6.0/YamlDotNet.dll

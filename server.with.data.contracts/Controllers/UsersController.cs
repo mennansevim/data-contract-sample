@@ -1,6 +1,9 @@
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Nodes;
-using Json.Schema;
 using Microsoft.AspNetCore.Mvc;
+using NJsonSchema;
+using NJsonSchema.Validation;
+
 namespace server.with.data.contracts.Controllers;
 
 
@@ -9,14 +12,23 @@ namespace server.with.data.contracts.Controllers;
 public class UsersController : ControllerBase
 {
  
-    private readonly JsonSchema _schema;
+    private readonly Task<JsonSchema> _schema;
 
     public UsersController()
     {
         // Read the schema from a file or a remote schema registry
-        const string filePath = "../data-contract-schema.json"; 
+        const string filePath = "../data-contract-schema.yml"; 
         var schemaText = System.IO.File.ReadAllText(filePath);
-        _schema = JsonSchema.FromText(schemaText);
+        _schema = JsonSchema.FromFileAsync(schemaText);
+    }
+    
+    public void EnsureSchemaAndDataIsMatched(string message)
+    {
+        var errors = _schema.GetAwaiter().GetResult().Validate(message);
+        if (errors.Count > 0)
+        {
+            throw new Exception("INVALID SCHEMA Data contract validation failed at producer side.");
+        }
     }
     
     [HttpPost]
@@ -26,11 +38,8 @@ public class UsersController : ControllerBase
         var jsonString = System.Text.Json.JsonSerializer.Serialize(request);
 
         // Parse the JSON string to a JsonNode
-        var jsonNode = JsonNode.Parse(jsonString);
-        var result = _schema.Evaluate(jsonNode, new EvaluationOptions { OutputFormat = OutputFormat.Hierarchical });
-        if (!result.IsValid)
-            throw new Exception("INVALID SCHEMA"); 
-        
+        EnsureSchemaAndDataIsMatched(jsonString);
+
         return Ok(new CreateUserResponse
         {
             Success = true,

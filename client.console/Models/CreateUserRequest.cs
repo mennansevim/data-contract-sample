@@ -11,5 +11,5 @@ public class CreateUserRequest
     public string Email { get; set; }
     
     [DataMember]
-    public bool IsActive { get; set; }
+    public bool IsActivec { get; set; }
 }

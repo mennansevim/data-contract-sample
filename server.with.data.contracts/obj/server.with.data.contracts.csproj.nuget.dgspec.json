@@ -38,17 +38,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "JsonSchema.Net": {
-              "target": "Package",
-              "version": "[7.0.3, )"
-            },
             "JsonSchema.Net.Generation": {
               "target": "Package",
               "version": "[4.3.0.2, )"
             },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[15.1.6, )"
             }
           },
           "imports": [
